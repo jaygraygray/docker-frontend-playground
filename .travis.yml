@@ -9,10 +9,6 @@ before_install:
 script:
   - docker run -e CI=true therealjaygray/docker-playground npm run test
 
-
-# DESTROY THIS INSTANCE AND RE-ADD 
-# ENV VARS IN TRAVIS, BUT ESCAPE
-# STUPID FUCKING CHARACTERS GODDAMNIT
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
